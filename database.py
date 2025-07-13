@@ -27,7 +27,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# For development - use SQLite
+
 if os.environ.get('ENVIRONMENT') == 'development':
     SQLALCHEMY_DATABASE_URL = "sqlite:///./todo.db"
     engine = create_engine(
